@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a website this you can enter a url and view its html source code">
+    <meta name="author" content="Richard Liu">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="logo.jpg" type="image/jpg">
+    <title>HTML source code viewer</title>
+    <script src="testServer.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="box">
+        <h1>HTML Source Code Viewer</h1>
+    </div>
+    <br>
+    <div class="box">
+        <div id="form">
+            <input id="input" type="url" placeholder="Enter the URL">
+            <button id="enter">Continue</button>
+        </div>
+        <div id="errorContainer" style="display:none;color:red">
+            <br>
+            <div id="status"></div>
+        </div>
+    </div>
+    <br>
+    <div class="box" id="displayContainer" style="display:none">
+        <div class="menu">
+            <button id="Reset">Reset</button>
+            <button id="backtopButton">Scroll to Top</button>
+            <button id="fullScreenButton">Full Screen</button>
+            <button id="format">Format</button>
+            <button id="copyCodeButton">Copy</button>
+            <button id="downloadCodeButton">Download</button>
+        </div>
+        <textarea readonly id="ResultDisplay"></textarea>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.4/beautify-html.min.js"
+        integrity="sha512-ZIu+FgQxrG6A7u+BQMNz0g+pTJGAqB+oumn2rZegvyPYJG4aegC6srYdRvksOaDfqOMM1/vuUJZWMIiMNJw2mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
